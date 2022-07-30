@@ -1,9 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+:root{
+    --PrimaryColorMain: hsl(25, 97%, 53%);
+    --PrimaryColorNeutral: hsl(0, 0%, 100%);
+    --SecondaryColorNeutral: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
-.formBox > input{
-    border-radius: 20px;
-    border-style: none;
+body{
+    font-family: 'Overpass',sans-serif;
+    width: 1440px;
+}
+p{
+    font-size: 15px;
+}
+
+
+.FormWrapper label{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: var(--SecondaryColorNeutral);
+}
+.FormWrapper input[type = "radio"]{
+    display: none;
+}
+
+.FormWrapper input[type = "radio"]:checked + label{
+    border: solid 2px green;
+}
+.text{
+    text-align: center;
+    line-height: 40px;
+    color: var(--PrimaryColorNeutral);
+    
 }
