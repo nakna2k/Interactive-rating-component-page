@@ -18,7 +18,7 @@
 }
 body{
     font-family: 'Overpass',sans-serif;
-    width: 1440px;
+    width: 100%;
 }
 p{
     font-size: 15px;
@@ -27,12 +27,11 @@ p{
 
 .FormWrapper label{
     display: inline-block;
-    border: 2px solid black;
     border-radius: 30px;
     width: 50px;
     height: 50px;
     text-align: center;
-    background-color: var(--SecondaryColorNeutral);
+    background-color: var(--MediumGrey);
 }
 .FormWrapper input[type = "radio"]{
     display: none;
@@ -43,7 +42,68 @@ p{
 }
 .text{
     text-align: center;
-    line-height: 40px;
+    line-height: 50px;
     color: var(--PrimaryColorNeutral);
     
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 1080px;
+    background-color: var(--VeryDarkBlue);
+
+    
+}
+.wrapper{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--darkBlue);
+    height: 40%;
+    width: 25%;
+    padding-left: 30px;
+    border-radius: 40px;
+    
+    
+}
+.wrapper > .topLogo{
+    background-color: var(--MediumGrey);
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 55px;
+    margin-top: 10px;
+}
+.wrapper > .titleBox{
+    text-align: left;
+    
+}
+.titleBox > h2{
+    font-size: 36px;
+    padding-bottom: 12px;
+    color: var(--PrimaryColorNeutral);
+}
+.titleBox > p{
+    color: var(--SecondaryColorNeutral);
+    
+}
+.FormWrapper{
+    gap: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    margin-top: 30px;
+    width: 95%;
+    border-radius: 35px;
+    height: 40px;
+    color: var(--PrimaryColorNeutral);
+    background-color: var(--PrimaryColorMain);
 }
