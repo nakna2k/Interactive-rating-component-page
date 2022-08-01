@@ -10,25 +10,36 @@
 <body>  
   <main class = "main">
     <section class="wrapper">
+    
+      <img src="./images/illustration-thank-you.svg" alt="" id="photo2">
+      <div id="titleBox2">
+        <div class="descWrapper"><p id="selectedDesc"></p></div></div>
+      
       <div class="topLogo">
-        <img src="./images/icon-star.svg" alt="">
+        <img id = "photo1" src="./images/icon-star.svg" alt="">
+       
+        
       </div>
       <div class="titleBox">
-        <h2>How did we do?</h2>
+        <h2 class = "titleBoxTitle">How did we do?</h2>
+       
         <p>Please let us know how we did with your support request. All feedback is appreciated 
           to help us improve our offering!</p>
       </div>
+      <h2 id="scriptTitle">Thank you!</h2>
+      <p id="scriptDescription">We appreciate you taking the time to give a rating. <br> If you ever need more support, 
+        don’t hesitate to <br> get in touch!</p>
       <div class="formBox">
         <div class="FormWrapper">
-          <input type="radio" name="rating" id="OneStar">
+          <input type="radio" class = "radioInput" name="rating" id="OneStar">
           <label for="OneStar"><p class = "text">1</p></label>
-          <input type="radio" name="rating" id="TwoStar">
-          <label for="TwoStar"><p class = "text">2</p></label>
-          <input type="radio" name="rating" id="ThreeStar">
+          <input type="radio" class = "radioInput" name="rating" id="TwoStar">
+          <label  for="TwoStar"><p class = "text">2</p></label>
+          <input type="radio" class = "radioInput" name="rating" id="ThreeStar">
           <label for="ThreeStar"><p class = "text">3</p></label>
-          <input type="radio" name="rating" id="FourStar">
+          <input type="radio" class = "radioInput" name="rating" id="FourStar">
           <label for="FourStar"><p class = "text">4</p></label> 
-          <input type="radio" name="rating" id="FiveStar">
+          <input type="radio" class = "radioInput" name="rating" id="FiveStar">
           <label for="FiveStar"><p class = "text">5</p></label><br>
         </div>
         <button id="submitBtn">SUBMIT</button>

@@ -31,14 +31,18 @@ p{
     width: 50px;
     height: 50px;
     text-align: center;
-    background-color: var(--MediumGrey);
+    background-color: var(--VeryDarkBlue);
+}
+.FormWrapper label:hover{
+    background-color: var(--PrimaryColorMain);
+    cursor: pointer;
 }
 .FormWrapper input[type = "radio"]{
     display: none;
 }
 
 .FormWrapper input[type = "radio"]:checked + label{
-    border: solid 2px green;
+    background-color: var(--MediumGrey);
 }
 .text{
     text-align: center;
@@ -46,6 +50,7 @@ p{
     color: var(--PrimaryColorNeutral);
     
 }
+
 
 
 main{
@@ -85,10 +90,17 @@ main{
     text-align: left;
     
 }
-.titleBox > h2{
+.titleBoxTitle{
     font-size: 36px;
     padding-bottom: 12px;
     color: var(--PrimaryColorNeutral);
+}
+#scriptTitle{
+    color: var(--PrimaryColorNeutral);
+    text-align: center;
+    font-size: 36px;
+    margin-left: 100px;
+    display: none;
 }
 .titleBox > p{
     color: var(--SecondaryColorNeutral);
@@ -106,4 +118,52 @@ button{
     height: 40px;
     color: var(--PrimaryColorNeutral);
     background-color: var(--PrimaryColorMain);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* SCRIPT EFFECT */
+#photo2{
+    display: none;
+    margin-top: 0px;
+    margin-left: 100px;
+}
+.titleBox > h2{
+    font-size: 36px;
+    padding-bottom: 12px;
+    color: var(--PrimaryColorMain);
+}
+#selectedDesc{
+    display: none;
+    font-size: 15px;
+    color: var(--PrimaryColorMain);
+    text-align: center;
+    margin-left: 90px;
+    background-color: var(--MediumGrey);
+    border-radius: 30px;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+}
+#titleBox2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.descWrapper
+{
+    text-align: center;
+
+}
+#scriptDescription{
+    display: none;
+    margin-top: -30px;
+    text-align: center;
+    color: var(--MediumGrey);
 }
